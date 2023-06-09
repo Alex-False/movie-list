@@ -1,0 +1,140 @@
+body {
+  background: #2c3e50;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: #ecf0f1;
+}
+
+.movie-search-container {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.movie-searchBar {
+  padding: 1rem;
+  font-size: 16px;
+  width: 50%;
+  border-radius: 5px;
+  border: 0;
+}
+
+.movies-view-toggle,
+.movie-add-clear {
+  padding: 1rem;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.movies-view-toggle:hover,
+.movie-add-clear:hover {
+  background-color: #2980b9;
+}
+
+.movie-card {
+  width: 350px;
+  background: #34495e;
+  margin: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-name {
+  padding: 1rem 0;
+  background: #3498db;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+.close-card {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: #ecf0f1;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-card:hover {
+  background-color: #bdc3c7;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-card h3,
+.movie-card h4,
+.movie-card p {
+  color: #ecf0f1;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+.movie-card h4 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-watched {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 1rem auto;
+  background-color: #2ecc71;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-watched.watched {
+  background-color: rgb(199, 50, 50);
+}
+
+.movie-add-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.add-delete-toggle {
+  margin-right: 1rem;
+  padding: 1rem;
+  font-size: 16px;
+}
+
+.movie-add-input {
+  padding: 1rem;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 0;
+  margin-right: 1rem;
+}
